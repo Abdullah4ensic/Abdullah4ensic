@@ -1,0 +1,53 @@
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+---------------------------------------------------
+
+ilk olarak dizimizi alalım  
+
+16  21   11   8  12  22
+ 
+ ortadan ikiye ayıralım
+ 
+ 16  21   11      8  12  22
+ 
+ 
+ bir daha ikiye bölelim
+ 
+ 
+ 16  21 ///   11        8    /// 12  22
+ 
+ tek eleman kalana kadar bölelim
+ 
+ 
+ 
+ 16 // 21 // 11         8 // 12  //  22
+ 
+ 
+ Bölme işleminden sonra  ikili birleştirme işlemine geçiyoruz  ikili ikili ikili sıralayarak 
+  
+    16  21    11            8    12  22
+    
+    11 16  21             8  12  22 
+    
+    
+    son hali olarak:     
+    
+    8  11  12  16  21  22  dizisini elde ediyoruz.
+    BİG O NOTASYONU İSE 
+    
+    Recursive fonksiyon olduğu için sürekli kendini çağırarak diziyi hep ikiye bölmektedir. 
+    Her bölünmüş dizinin Merge işlemi için de dizinin uzunluğu olan n işlem yapıldığından O(n*(logn)) -----> O(6*(log6)) olacaktır.
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
